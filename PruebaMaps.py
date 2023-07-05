@@ -514,7 +514,7 @@ answer = {
    "status" : "OK"
 }
 
-# Recibimos el JSON y lo recorremos para dar un recorrido a través de las distancias o tiempos entre las direcciones.
+# Recibimos el JSON y lo iteramos para dar un recorrido a través de las distancias o tiempos entre las direcciones.
 
 # Obtendremos los tiempos o las distancias según se prefiera con en la key 'duration' or 'distance' del 
 # diccionario desde cada dirección y tomaremos el mínimo.
@@ -581,5 +581,5 @@ def Link(cadena):
       fdestinos = fdestinos.replace(" ","+")
       
       urlrecorrido = base + fdestinos
-   print(urlrecorrido)
+   return urlrecorrido
    
